@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from"./components/navbar"; 
 
 export default function Home() {
   return (
     <main>
-      <header className={styles.header}>
+      <navbar></navbar>
+      <header id="header" className={styles.header}>
         <div>
           <h1>
             <span>
@@ -19,7 +21,7 @@ export default function Home() {
           </h1>
         </div>
       </header>
-      <section className={styles.infoSecion}>
+      <section id="info" className={styles.infoSecion}>
         <img
           src="/imagen-para-website.png"
           alt="imagen"
