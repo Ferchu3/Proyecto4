@@ -10,14 +10,12 @@ function Navbar(){
         scrollToSection(id);
     };
 
-    const xcrollToSection =(id)=> {
+    const scrollToSection =(id)=> {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({behavior: 'smooth'})
         }
     };
-}
-function Navbar( ) {
     return(
         <nav className={styles.navbar}>
             <div 
